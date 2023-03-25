@@ -1,6 +1,7 @@
 import { asset, Head } from "$fresh/runtime.ts";
 import { AppProps } from "$fresh/src/server/types.ts";
 import Footer from "../components/Footer.tsx";
+import AuthHeader from "../components/AuthHeader.tsx";
 
 // Set our style globally.
 export default function App({ Component }: AppProps) {
@@ -11,6 +12,7 @@ export default function App({ Component }: AppProps) {
         <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"/>
       </Head>
       <body>
+        <AuthHeader />
         <Component />
         <Footer />
       </body>
