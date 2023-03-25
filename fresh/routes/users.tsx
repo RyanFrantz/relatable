@@ -1,6 +1,5 @@
 //import { Handlers, PageProps } from "$fresh/server.ts";
 import { Handlers } from "$fresh/server.ts";
-import { Head } from "$fresh/runtime.ts";
 import { connect } from 'https://esm.sh/*@planetscale/database@1.4.0';
 import Footer from "../components/Footer.tsx";
 

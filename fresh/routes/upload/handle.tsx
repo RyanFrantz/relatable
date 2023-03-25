@@ -1,4 +1,3 @@
-import { Head } from "$fresh/runtime.ts";
 import Footer from "../../components/Footer.tsx";
 import UploadHandleForm from "../../islands/UploadHandleForm.tsx";
 

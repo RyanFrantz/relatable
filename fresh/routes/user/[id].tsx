@@ -1,5 +1,4 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { Head } from "$fresh/runtime.ts";
 import Footer from "../../components/Footer.tsx";
 import UserHandleRow from "../../islands/UserHandleRow.tsx";
 
