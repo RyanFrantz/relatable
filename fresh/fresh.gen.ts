@@ -7,14 +7,16 @@ import * as $0 from "./routes/_app.tsx";
 import * as $1 from "./routes/api/handle/[handle].ts";
 import * as $2 from "./routes/api/user/[id].ts";
 import * as $3 from "./routes/api/user/[id]/handles.ts";
-import * as $4 from "./routes/index.tsx";
-import * as $5 from "./routes/upload/handle.tsx";
-import * as $6 from "./routes/upload/user.tsx";
-import * as $7 from "./routes/user/[id].tsx";
-import * as $8 from "./routes/users.tsx";
-import * as $$0 from "./islands/UploadHandleForm.tsx";
-import * as $$1 from "./islands/UploadUserForm.tsx";
-import * as $$2 from "./islands/UserHandleRow.tsx";
+import * as $4 from "./routes/handle.tsx";
+import * as $5 from "./routes/index.tsx";
+import * as $6 from "./routes/upload/handle.tsx";
+import * as $7 from "./routes/upload/user.tsx";
+import * as $8 from "./routes/user/[id].tsx";
+import * as $9 from "./routes/users.tsx";
+import * as $$0 from "./islands/SearchHandleForm.tsx";
+import * as $$1 from "./islands/UploadHandleForm.tsx";
+import * as $$2 from "./islands/UploadUserForm.tsx";
+import * as $$3 from "./islands/UserHandleRow.tsx";
 
 const manifest = {
   routes: {
@@ -22,16 +24,18 @@ const manifest = {
     "./routes/api/handle/[handle].ts": $1,
     "./routes/api/user/[id].ts": $2,
     "./routes/api/user/[id]/handles.ts": $3,
-    "./routes/index.tsx": $4,
-    "./routes/upload/handle.tsx": $5,
-    "./routes/upload/user.tsx": $6,
-    "./routes/user/[id].tsx": $7,
-    "./routes/users.tsx": $8,
+    "./routes/handle.tsx": $4,
+    "./routes/index.tsx": $5,
+    "./routes/upload/handle.tsx": $6,
+    "./routes/upload/user.tsx": $7,
+    "./routes/user/[id].tsx": $8,
+    "./routes/users.tsx": $9,
   },
   islands: {
-    "./islands/UploadHandleForm.tsx": $$0,
-    "./islands/UploadUserForm.tsx": $$1,
-    "./islands/UserHandleRow.tsx": $$2,
+    "./islands/SearchHandleForm.tsx": $$0,
+    "./islands/UploadHandleForm.tsx": $$1,
+    "./islands/UploadUserForm.tsx": $$2,
+    "./islands/UserHandleRow.tsx": $$3,
   },
   baseUrl: import.meta.url,
   config,
