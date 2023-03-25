@@ -1,16 +1,9 @@
 //import { Handlers, PageProps } from "$fresh/server.ts";
 import { Handlers } from "$fresh/server.ts";
 import { connect } from 'https://esm.sh/*@planetscale/database@1.4.0';
+import dbConfig from '../dbConfig.ts';
 
-// Planetscale config.
-// Env vars are expected to be defined in the Deno Deploy project.
-const pConfig = {
-  host: Deno.env.get('DB_HOST') || '',
-  username: Deno.env.get('DB_USER') || '',
-  password: Deno.env.get('DB_PASS') || ''
-};
-
-const conn = connect(pConfig);
+const conn = connect(dbConfig);
 
 const getUsers = async () => {
   const stmt = `

@@ -1,20 +1,13 @@
 import { Handlers } from "$fresh/server.ts";
 import { z } from 'https://esm.sh/zod@3.21.4';
 import { connect } from 'https://esm.sh/*@planetscale/database@1.4.0';
+import dbConfig from '../../../dbConfig.ts';
 
 // Insert a single user.
 // curl -v -X POST localhost:5000/api/user \
 //   -d '{"name": "Betty White", "employmentStatus": "fulltime"}'
 
-// Planetscale config.
-// Env vars are expected to be defined in the Deno Deploy project.
-const pConfig = {
-  host: Deno.env.get('DB_HOST') || '',
-  username: Deno.env.get('DB_USER') || '',
-  password: Deno.env.get('DB_PASS') || ''
-};
-
-const conn = connect(pConfig);
+const conn = connect(dbConfig);
 
 // Look up a user.
 // Returns a number representing the HTTP response and an object with helpful
