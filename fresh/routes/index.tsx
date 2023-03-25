@@ -1,5 +1,3 @@
-import Footer from "../components/Footer.tsx";
-
 export default function Home() {
   return (
     <>
@@ -12,7 +10,6 @@ export default function Home() {
       <main>
         Relatable Demo
       </main>
-      <Footer/>
     </>
   );
 }

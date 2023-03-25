@@ -1,4 +1,3 @@
-import Footer from "../../components/Footer.tsx";
 import UploadHandleForm from "../../islands/UploadHandleForm.tsx";
 
 
@@ -14,7 +13,6 @@ export default function UploadHandle() {
       <main>
         <UploadHandleForm />
       </main>
-      <Footer/>
     </>
   );
 }

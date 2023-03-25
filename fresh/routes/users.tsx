@@ -1,7 +1,6 @@
 //import { Handlers, PageProps } from "$fresh/server.ts";
 import { Handlers } from "$fresh/server.ts";
 import { connect } from 'https://esm.sh/*@planetscale/database@1.4.0';
-import Footer from "../components/Footer.tsx";
 
 // Planetscale config.
 // Env vars are expected to be defined in the Deno Deploy project.
@@ -60,7 +59,6 @@ export default function Users({data}) {
       </table>
       </article>
     </main>
-    <Footer/>
     </>
   );
 }

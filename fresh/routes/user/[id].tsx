@@ -1,5 +1,4 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import Footer from "../../components/Footer.tsx";
 import UserHandleRow from "../../islands/UserHandleRow.tsx";
 
 export const handler: Handlers = {
@@ -54,7 +53,6 @@ export default function User({data}: PageProps) {
       </table>
       </article>
     </main>
-    <Footer/>
     </>
   );
 }
