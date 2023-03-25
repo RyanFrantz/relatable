@@ -10,6 +10,9 @@ export default function UserHandleRow({userHandle}) {
 
   // Update the text of the user's handle and related handle type.
   // TODO: Only update if the text is different from our starting state.
+  // FIXME: Move this to a util module and incorporate it into an API
+  // route that we can call from this island.
+  // That way, we don't need to access any environment variables.
   const updateHandle = async (userHandle, handleText: string) => {
     // FIXME: If we update a canonical handle, we have to update the relevant
     // record in the 'user' table. Remind me why there is a user record that
