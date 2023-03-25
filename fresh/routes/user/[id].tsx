@@ -1,5 +1,5 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import UserHandleRow from "../../islands/UserHandleRow.tsx";
+import UserHandleRow from "../../components/UserHandleRow.tsx";
 
 export const handler: Handlers = {
   async GET(req, ctx) {
